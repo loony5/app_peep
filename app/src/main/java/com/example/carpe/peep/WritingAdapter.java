@@ -270,15 +270,6 @@ public class WritingAdapter extends RecyclerView.Adapter<WritingAdapter.WritingV
                                             @Override
                                             public void onClick(DialogInterface dialog, int which) {
 
-
-//                                                DatabaseReference dPosts = FirebaseDatabase.getInstance().getReference("Posts");
-//                                                String postid = dPosts.push().getKey();
-//
-//                                                FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-//                                                String userid = firebaseUser.getUid();
-//
-//                                                dPosts.child(userid).child(postid).removeValue();
-
                                                 // ArrayList 에서 삭제하고, item 삭제
                                                 wList.remove(position);
                                                 notifyItemRemoved(position);

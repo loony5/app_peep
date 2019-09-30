@@ -1,13 +1,11 @@
 package com.example.carpe.peep;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.TypedValue;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -50,9 +48,11 @@ public class CommentActivity extends AppCompatActivity {
         image_profile = findViewById(R.id.image_profile);
         post = findViewById(R.id.post);
 
+        // 현재 로그인한 사용자 가져오기
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Users").child(firebaseUser.getUid());
 
+        // 로그인한 사용자 프로필 이미지 보여주기
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -84,6 +84,7 @@ public class CommentActivity extends AppCompatActivity {
         mAdapter = new CommentAdapter(this, mArrayList);
         mRecyclerview.setAdapter(mAdapter);
 
+        // 댓글 작성 후 게시 버튼을 누르면 리사이클러뷰에 반영
         post.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -101,6 +102,7 @@ public class CommentActivity extends AppCompatActivity {
 
     }
 
+    // 댓글 저장
     private void saveComment() {
 
         SharedPreferences sharedPreferences = getSharedPreferences("Comments", MODE_PRIVATE);
@@ -112,6 +114,7 @@ public class CommentActivity extends AppCompatActivity {
 
     }
 
+    // 댓글 불러오기
     private void loadComment() {
 
         SharedPreferences sharedPreferences = getSharedPreferences("Comments", MODE_PRIVATE);

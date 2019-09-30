@@ -10,11 +10,6 @@ public class CommentData {
 
     }
 
-//    public CommentData(){
-//
-//
-//    }
-
     public String getComment() {
         return comment;
     }

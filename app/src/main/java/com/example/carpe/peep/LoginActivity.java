@@ -46,7 +46,6 @@ public class LoginActivity extends AppCompatActivity {
 
     FirebaseAuth firebaseAuth;
 
-//    Animation alpha;
     Animation shake;
 
     @Override
@@ -56,13 +55,13 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         shake = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake);
-//        alpha = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
 
         idImage = findViewById(R.id.idImage);
         pwImage = findViewById(R.id.pwImage);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
+        // 로그인 화면 애니메이션
         loginEmail = (EditText) findViewById(R.id.loginEmail);
         loginEmail.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
@@ -94,7 +93,6 @@ public class LoginActivity extends AppCompatActivity {
         buttonSignup = (ImageButton) findViewById(R.id.buttonSignup);
         buttonLogin = (ImageButton) findViewById(R.id.buttonLogin);
         about = (ImageButton) findViewById(R.id.aboutPeep);
-//        about.setAnimation(alpha);
 
         logo = (ImageView) findViewById(R.id.logo);
 

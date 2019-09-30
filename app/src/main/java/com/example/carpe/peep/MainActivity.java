@@ -190,12 +190,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-    public void chatClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), ChatActivity.class);
-        startActivity(intent);
-    }
-
     @Override
     public void onBackPressed() {
 

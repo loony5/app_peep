@@ -149,8 +149,6 @@ public class EditActivity extends AppCompatActivity {
         // 프로필 사진바꾸기 선택하면, 갤러리 open
         if (view == imageEdit) {
 
-//            Intent intent = new Intent(Intent.ACTION_GET_CONTENT); // 내 파일로 이동하는 intent
-//            intent.setType("image/*");
             Intent intent = new Intent(Intent.ACTION_PICK);
             intent.setType(MediaStore.Images.Media.CONTENT_TYPE);
             startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_ALBUM);
@@ -165,13 +163,6 @@ public class EditActivity extends AppCompatActivity {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
 
-//                    userid = user.getUid();
-//
-//                    DatabaseReference dUser = FirebaseDatabase.getInstance().getReference("Users").child(userid);
-//                    DatabaseReference dPost = FirebaseDatabase.getInstance().getReference("Posts").child(userid);
-//
-//                    dUser.removeValue();
-//                    dPost.removeValue();
 
                     user.delete().addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
@@ -210,14 +201,6 @@ public class EditActivity extends AppCompatActivity {
 
     }
 
-//    private void deleteUser(String userid) {
-//
-//        DatabaseReference dUser = FirebaseDatabase.getInstance().getReference("Users").child(userid);
-//        DatabaseReference dPost = FirebaseDatabase.getInstance().getReference("Posts").child(userid);
-//
-//        dUser.removeValue();
-//        dPost.removeValue();
-//    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

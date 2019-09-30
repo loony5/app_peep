@@ -190,20 +190,6 @@ public class MyActivity extends AppCompatActivity {
         }
     }
 
-    // 팔로워 버튼 클릭했을때,
-    public void followerClick(View view) {
-
-        Intent intent = new Intent(getApplicationContext(), FollowerActivity.class);
-        startActivity(intent);
-    }
-
-    // 팔로잉 버튼 클릭했을때,
-    public void followingClick(View view) {
-
-        Intent intent = new Intent(getApplicationContext(), FollowingActivity.class);
-        startActivity(intent);
-    }
-
     // 홈 클릭,
     public void mainClick(View view) {
 

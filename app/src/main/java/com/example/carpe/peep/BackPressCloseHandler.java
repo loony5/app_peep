@@ -13,6 +13,7 @@ public class BackPressCloseHandler {
         this.activity = context;
     }
 
+    // back 버튼 누른 후 2초 후 showGuide() 메소드 호출, 2초가 지나면 액티비티 종료
     public void onBackPressed(){
         if (System.currentTimeMillis() > backKeyPressedTime + 2000){
             backKeyPressedTime = System.currentTimeMillis();
@@ -25,6 +26,7 @@ public class BackPressCloseHandler {
         }
     }
 
+    // 종료 안내 메세지 표시
     public void showGuide() {
         toast = Toast.makeText(activity,
                 "'뒤로가기'버튼을 한번 더 누르면 종료됩니다.", Toast.LENGTH_SHORT);
