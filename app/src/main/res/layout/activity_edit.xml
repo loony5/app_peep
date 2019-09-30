@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity"
+    android:orientation="vertical">
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:background="@drawable/toolbar_top">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:text="프로필 편집"
+           android:textSize="14dp"
+           android:textStyle="bold"
+           android:gravity="center"/>
+
+       <Button
+           android:id="@+id/completion"
+           android:onClick="onClick"
+           android:layout_width="80dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="right|center_vertical"
+           android:background="@android:color/transparent"
+           android:text="완료"
+           android:textSize="14dp"/>
+
+   </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:background="@drawable/toolbar_top">
+
+        <ImageView
+            android:id="@+id/myImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/image_default"
+            android:layout_gravity="center"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/imageEdit"
+                android:onClick="onClick"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_horizontal"
+                android:text="프로필 사진 바꾸기"
+                android:textSize="12dp"
+                android:textColor="#9c79e6"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:text="Peep ID"
+                android:textSize="14dp"/>
+
+            <EditText
+                android:id="@+id/myID"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:textSize="14dp"
+                android:text="My ID"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/rectangle"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:text="개인 정보"/>
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:text="Email"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/myEmail"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Email"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:text="Name"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/myName"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Name"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/buttonDeleteAccount"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="계정삭제"
+            android:textSize="12dp"
+            android:textColor="#9c79e6"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textSize="12dp"
+            android:textColor="#9c79e6"
+            android:text="로그아웃"/>
+
+    </LinearLayout>
+
+</LinearLayout>

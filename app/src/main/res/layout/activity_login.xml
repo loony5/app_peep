@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo_01"
+        android:layout_gravity="center_horizontal"/>
+
+    <ImageView
+        android:id="@+id/lineTop"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/line"
+        android:layout_gravity="center_horizontal"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/idImage"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:src="@drawable/name_btn01"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/pwImage"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:src="@drawable/password_btn01"
+            android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="14dp"
+            android:id="@+id/loginEmail"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textSize="14dp"
+            android:hint="Email"
+            android:background="@android:color/transparent"/>
+
+
+
+        <EditText
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="14dp"
+            android:id="@+id/loginPassword"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="14dp"
+            android:hint="Password"
+            android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/buttonLogin"
+            android:onClick="onClick"
+            android:layout_width="65dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_login"/>
+
+        <ImageButton
+            android:id="@+id/buttonSignup"
+            android:onClick="onClick"
+            android:layout_width="65dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="5dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_signup"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lineBottom"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/line"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <ImageButton
+        android:id="@+id/aboutPeep"
+        android:onClick="onClick"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:src="@drawable/about_btn01"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

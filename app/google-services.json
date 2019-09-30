@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "138503137763",
+    "firebase_url": "https://peepsignup.firebaseio.com",
+    "project_id": "peepsignup",
+    "storage_bucket": "peepsignup.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138503137763:android:5b5d7e9330c0b890",
+        "android_client_info": {
+          "package_name": "com.example.carpe.peep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138503137763-0il2i8n5dc81k8bs9sgvhpfc6afqm5vl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.carpe.peep",
+            "certificate_hash": "2cad867d1f5a128edc4d1ddaf66df713797a85a3"
+          }
+        },
+        {
+          "client_id": "138503137763-obthjc7vjtqlbv2u9g38r6041v9pvbgl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw8BonBRjdO90SpcoFM-HvrloVellY2eY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138503137763-obthjc7vjtqlbv2u9g38r6041v9pvbgl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
